@@ -10,7 +10,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Main Styles -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Scripts -->
+    <script src="/assets/js/script.js" defer></script>
 </head>
 <body>
     <!-- Start Header -->
@@ -35,17 +37,12 @@
     <main>
         <!-- Start Hero Section -->
         <section id="hero">
-            <div class="container">
-                <div class="hero__text-area">
-                    <h1>A Digital Product Agency</h1>
-                    <p>Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
-                    <button>Contact Now</button>
-                </div>
-                <div class="hero__media-area">
-                    <div class="hero__image">
-                        <img src="/img/hero_img.png" alt="Hero Image">
-                    </div>
-                </div>
+            <div class="hero__text-area">
+                <h1>A Digital Product Agency</h1>
+                <p>Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
+                <button>Contact Now</button>
+            </div>
+            <div class="hero__media-area">
             </div>
         </section>
         <!-- End Hero Section -->
@@ -58,10 +55,10 @@
                     <p>Several selected clients, who already believe in our service.</p>
                 </div>
                 <div class="our-client__logos">
-                    <img src="/img/Google Logo.png" alt="Google">
-                    <img src="/img/Airbnb Logo.png" alt="Airbnb">
-                    <img src="/img/Uber Eats Logo.png" alt="Uber">
-                    <img src="/img/Amazon Logo.png" alt="Amazon">
+                    <img src="/assets/img/Google Logo.png" alt="Google">
+                    <img src="/assets/img/Airbnb Logo.png" alt="Airbnb">
+                    <img src="/assets/img/Uber Eats Logo.png" alt="Uber">
+                    <img src="/assets/img/Amazon Logo.png" alt="Amazon">
                 </div>
             </div>
         </section>
@@ -77,14 +74,14 @@
                 <div class="our-services__col">
                     <div class="our-services__card-item card-01">
                         <div class="icon">
-                            <img src="/img/icons/box-search 1.png" alt="Box Search">
+                            <img src="/assets/img/icons/box-search 1.png" alt="Box Search">
                         </div>
                         <h5>Business Idea Planning</h5>
                         <p>We present you a proposal and discuss niffty-gritty like</p>
                     </div>
                     <div class="our-services__card-item card-02">
                         <div class="icon">
-                            <img src="/img/icons/code-1 1.png" alt="Code">
+                            <img src="/assets/img/icons/code-1 1.png" alt="Code">
                         </div>
                         <h5>Development Website and App</h5>
                         <p>Communication protocols apart from engagement models</p>
@@ -93,14 +90,14 @@
                 <div class="our-services__col">
                     <div class="our-services__card-item card-03">
                         <div class="icon">
-                            <img src="/img/icons/empty-wallet 1.png" alt="Wallet">
+                            <img src="/assets/img/icons/empty-wallet 1.png" alt="Wallet">
                         </div>
                         <h5>Financial Planning System</h5>
                         <p>Protocols apart from aengage models, pricing billing</p>
                     </div>
                     <div class="our-services__card-item card-04">
                         <div class="icon">
-                            <img src="/img/icons/chart-square 1.png" alt="Chart">
+                            <img src="/assets/img/icons/chart-square 1.png" alt="Chart">
                         </div>
                         <h5>Market Analysis Project</h5>
                         <p>Protocols apart from aengage models, pricing billing</p>
@@ -114,8 +111,11 @@
         <section id="about">
             <div class="container">
                 <div class="about__media">
-                    <img src="/img/about__section.png" alt="About">
-                    <img src="/img/icons/play-rounded-button 1.svg" alt="Play Button">
+                    <!-- <img src="/assets/img/about__section.png" alt="About"> -->
+                    <video width="100%" height="auto" poster="/assets/img/about__section.png" style="object-fit: cover;">
+                        <source src="/assets/videos/Imagine Dragons - Birds (Animated Video).mp4" type="video/mp4">
+                    </video>
+                    <img id="play-btn" src="/assets/img/icons/play-rounded-button 1.svg" alt="Play Button">
                 </div>
                 <div class="about__text">
                     <h3>Great Digital Product Agency since 2016 </h3>
@@ -135,21 +135,46 @@
                 <div class="testimonial__area">
                     <div class="testimonial__comments">
                         <div class="testimonial__image">
-                            <img src="/img/testimonial.png" alt="Testimonial 1">
+                            <img src="/assets/img/testimonial.png" alt="Testimonial 1">
                         </div>
                         <div class="testimonial__msg-body">
                             <h5>Matthew Paul</h5>
                             <p>Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.</p>
                             <ul class="testimonial__dots">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li class="active"></li>
+                                <li class=""></li>
+                                <li class=""></li>
+                                <li class=""></li>
+                                <li class=""></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="testimonial__clients"></div>
+                    <div class="testimonial__clients">
+                        <a href="#">
+                            <img src="/assets/img/avatar-1.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/assets/img/avatar-2.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/assets/img/avatar-3.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/assets/img/avatar-4.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/assets/img/avatar-5.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/assets/img/avatar-6.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/assets/img/avatar-7.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/assets/img/avatar-8.png" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -177,14 +202,14 @@
         <div class="container">
             <div class="footer__widgets">
 
-                <div class="footer__widget">
-                    <h3>A+ Studio</h3>
+                <div class="footer__widget header__logo">
+                    <h3><span>A+ </span>Studio</h3>
                     <p>Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
                     <div class="footer__social">
                         <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li class="fb"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="tw"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li class="in"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                 </div>
